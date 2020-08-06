@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/css/myStyleSheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="form">
+        <h2>Register With Us</h2>
+        <div class="form-control">
+          <label for="username">User Name</label>
+          <input id="username" type="text" placeholder="Enter user name" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input id="email" type="text" placeholder="Enter valid email" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter password" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Password2</label>
+          <input
+            id="password2"
+            type="password"
+            placeholder="Matched password"
+          />
+          <small>Error Message</small>
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+    <script src="/scripts/myScripts.js"></script>
+  </body>
+</html>

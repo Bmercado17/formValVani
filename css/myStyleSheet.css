@@ -1,84 +1,79 @@
-
-:root{
-    --success-color:green;
-    --error-color: red;
+:root {
+  --success-color: rgb(70, 204, 74);
+  --error-color: red;
 }
-
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    background-color: mediumaquamarine;
-    font-family: 'Open Sans', sans-serif;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;      /* this is how you declare the view port */
-    margin: 0;
-    
+  background-color: mediumaquamarine;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* this is how you declare the view port */
+  margin: 0;
 }
 .container {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
-    width: 400px;
-    
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+  width: 400px;
 }
 h2 {
-    text-align: center;
-    margin: 0 0 20px;
+  text-align: center;
+  margin: 0 0 20px;
 }
 .form {
-    padding: 30px 40px;
+  padding: 30px 40px;
 }
 .form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position:relative;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
 }
 .form-control label {
-    color:gray;
-    display: block;
-    margin-bottom: 5px;
-
+  color: gray;
+  display: block;
+  margin-bottom: 5px;
 }
 .form-control input {
-    border: 2px solid gray;
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-    padding: 14px;
-    font-size: 12px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 12px;
 }
 .form-control input:focus {
-    outline:0;
-    border-color: darkmagenta;
+  outline: 0;
+  border-color: darkmagenta;
 }
 .form-control.success input {
-    border-color: var(--success-color);
+  border-color: var(--success-color);
 }
 .form-control.error input {
-    border-color: var(--error-color);
+  border-color: var(--error-color);
 }
 .form-control small {
-    color: var(--error-color);
-    visibility: hidden;
-    position:absolute;
-    bottom:0;
-    left:0;
+  color: var(--error-color);
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .form-control.error small {
-    visibility: visible;
+  visibility: visible;
 }
 .form button {
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    border-radius: 3px;
-    color: black;
-    height: 35px;
-    /* background-color: lightgrey; */
-    border-color: violet;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  color: black;
+  height: 35px;
+  /* background-color: lightgrey; */
+  border-color: violet;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
